@@ -1,13 +1,13 @@
 {
   "name": "walletsystem",
   "version": "1.0.0",
-  "description": "This is a simple wallet system using Express.JS and Vue.JS",
+  "description": "This is a simple wallet system using Express.JS with Passport.JS integration",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
-  "author": "Four of Chains",
+  "author": "Lhester Monroyo",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
