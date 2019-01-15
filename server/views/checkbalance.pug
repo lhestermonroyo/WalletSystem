@@ -1,0 +1,27 @@
+extends layout
+
+block content 
+    .container
+      h2.mt-3.mb-3 Check Balance
+      h5.text-right My Wallet: 
+        strong P#{user.balance}
+      hr
+      ul.list-group
+        li.list-group-item.d-flex.justify-content-between.align-items-center
+          | Current Wallet Balance
+          span.badge.badge-primary.badge-pill P50000
+        li.list-group-item.d-flex.justify-content-between.align-items-center
+          | Recent Amount Paid
+          span.badge.badge-primary.badge-pill P40000
+        li.list-group-item.d-flex.justify-content-between.align-items-center
+          | Recent Recepient
+          span.badge.badge-primary.badge-pill Express Wallet
+        li.list-group-item.d-flex.justify-content-between.align-items-center
+          | Recent Transaction Type
+          span.badge.badge-primary.badge-pill Deposit
+        li.list-group-item.d-flex.justify-content-between.align-items-center
+          | Transaction ID
+          span.badge.badge-primary.badge-pill 01-2018-003
+        li.list-group-item.d-flex.justify-content-between.align-items-center
+          | Date and Time
+          span.badge.badge-primary.badge-pill November 20, 2018 - 9:30am

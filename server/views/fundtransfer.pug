@@ -1,0 +1,29 @@
+extends layout
+
+block content 
+    .container
+      h2.mt-3.mb-3 Fund Transfer
+      h5.text-right My Wallet: 
+        strong P#{user.balance}
+      hr
+      .row.mt-6
+        .col-lg-3
+        .col-lg-6
+          form(action="/", method="post")
+            .form-group
+              label(for="") Send Money To:
+              input.form-control(type="email", name="email" placeholder="Enter recepient's e-mail" required)
+            .form-group
+              label(for="") Amount:
+              input.form-control(type="number", name="amount" min="" max="" required)
+            .form-group
+              label(for="") Remarks:
+              textarea.form-control(rows="5", name="email" required)
+            .form-group
+              label(for="") Enter Your Password to Confirm:
+              input.form-control(type="password", name="password" required)
+            .form-group
+              button.btn.btn-success.mr-2(type="submit") Confirm
+        .col-lg-3
+      
+        

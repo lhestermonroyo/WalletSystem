@@ -1,0 +1,25 @@
+extends layout
+
+block content 
+    .container
+      h2.mt-3.mb-3 Transaction History
+      h5.text-right My Wallet: 
+        strong P#{user.balance}
+      hr
+      table.table.table-hover
+        thead
+          tr
+            th Date and Time
+            th Transaction ID
+            th Transaction Type
+            th Recepient
+            th Amount Paid
+        tbody
+          each transaction in transactions
+            if transaction.sender == user.id
+              tr
+                td #{transaction.timestamp}
+                td #{transaction.id}
+                td #{transaction.transaction_type}
+                td #{transaction.recepient}
+                td #{transaction.amount}

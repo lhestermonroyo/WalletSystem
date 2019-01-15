@@ -1,0 +1,6 @@
+.message 
+  each type in Object.keys(messages)
+    each message in messages[type]
+      div(class="alert alert-"+type)
+        button.close(type="button" data-dismiss="alert") &times;
+        p.text-center= message

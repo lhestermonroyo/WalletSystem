@@ -1,0 +1,32 @@
+{
+  "name": "walletsystem",
+  "version": "1.0.0",
+  "description": "This is a simple wallet system using Express.JS and Vue.JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Four of Chains",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.3.6",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.3",
+    "simple-json-store": "0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}

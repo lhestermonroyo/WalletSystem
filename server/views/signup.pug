@@ -1,0 +1,33 @@
+extends layout
+
+block content 
+    .container
+      .row
+        .col-lg-4
+        .col-lg-4
+          h2.text-center.mt-3 Create Your Own Wallet
+          != messages('message', locals)
+          form(action="signup/add", method="post")
+            //- each account in accounts
+            //-   p= account.email
+            .form-group
+              label(for="") Firstname:
+              input.form-control(type="text", name="firstname" required)
+            .form-group
+              label(for="") Lastname:
+              input.form-control(type="text", name="lastname" required)
+            .form-group
+              label(for="") E-mail:
+              input.form-control(type="email", name="email" required)
+            .form-group
+              label(for="") Password:
+              input.form-control(type="password", name="password" required)
+            .form-group
+              label(for="") Confirm Password:
+              input.form-control(type="password", name="con_password" required)
+              span#displayErr(style="display: none;") Passwords not identical.
+            .form-group
+              button.btn.btn-block.btn-success(type="submit") Sign Up
+          a.btn.btn-block.btn-primary(href="/") Log In
+          
+        .col-lg-4

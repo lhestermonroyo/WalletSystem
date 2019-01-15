@@ -1,0 +1,21 @@
+extends layout
+
+block content 
+    .container
+      .row
+        .col-lg-4
+        .col-lg-4
+          h2.text-center.mt-3 Log In
+          != messages('message', locals)
+          form(action="/login", method="post")
+            .form-group
+              label(for="") E-mail:
+              input.form-control(type="email", name="email" required)
+            .form-group
+              label(for="") Password:
+              input.form-control(type="password", name="password" required)
+            .form-group
+              button.btn.btn-block.btn-success(type="submit") Log In
+          a.btn.btn-block.btn-primary(href="/signup") Sign Up
+        .col-lg-4 
+        
